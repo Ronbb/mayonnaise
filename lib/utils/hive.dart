@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:hive/hive.dart';
 import 'package:mayonnaise/models/adapters/datetime.dart';
 import 'package:mayonnaise/models/message.dart';
+import 'package:mayonnaise/models/store.dart';
 import 'package:path_provider/path_provider.dart';
 
 extension HiveX on HiveInterface {
@@ -17,8 +18,10 @@ extension HiveX on HiveInterface {
 
     this.init(dbPath);
 
-    this.registerAdapter(DateTimeAdapter());
     this.registerAdapter(MessageAdapter());
+    this.registerAdapter(DateTimeAdapter());
+    this.registerAdapter(MessageTypeAdapter());
+    this.registerAdapter(InstanceInfoAdapter());
   }
 }
 

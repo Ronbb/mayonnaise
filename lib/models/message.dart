@@ -10,13 +10,27 @@ class Message {
   @HiveField(1)
   final String message;
 
+  @HiveField(2)
+  final MessageType type;
+
   Message({
     required this.time,
     required this.message,
+    this.type = MessageType.data,
   });
 
   @override
   String toString() {
     return message;
   }
+}
+
+@HiveType(typeId: 3)
+enum MessageType {
+  @HiveField(0)
+  data,
+  @HiveField(1)
+  error,
+  @HiveField(2)
+  done,
 }

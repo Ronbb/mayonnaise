@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mayonnaise/pages/Instance/instance.dart';
+import 'package:mayonnaise/pages/Instance/instance_view.dart';
 
 class App extends StatelessWidget {
   @override
@@ -12,7 +12,7 @@ class App extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: HomePage(title: 'WebSocket'),
-      home: InstancePage(),
+      home: InstanceView(),
     );
   }
 }

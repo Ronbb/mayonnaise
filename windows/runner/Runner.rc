@@ -90,7 +90,7 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "fun.ronbb" "\0"
-            VALUE "FileDescription", "A new Flutter project." "\0"
+            VALUE "FileDescription", "Mayonnaise" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "mayonnaise" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2021 fun.ronbb. All rights reserved." "\0"
